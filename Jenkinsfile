@@ -28,5 +28,11 @@ pipeline {
                 }
             }
         }
+	stage ('Docker run'){
+	steps {
+	bat 'docker run hello-world'
+	}
+}		
+
     }
 }
