@@ -28,12 +28,6 @@ pipeline {
                 }
             }
         }
-	stage ('Docker run'){
-	steps {
-	echo 'docker run'
-	bat 'docker run hello-world'
-	}
-}		
 
     }
 }
