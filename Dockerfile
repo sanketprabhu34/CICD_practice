@@ -1,2 +1,2 @@
 FROM tomcat:8
-COPY C:\Users\Sanket\.jenkins\workspace\pipeline_tests\target\*.jar /usr/local/tomcat/webapps/
+COPY target/my-app-1.0-SNAPSHOT.jar /usr/local/tomcat/webapps/
