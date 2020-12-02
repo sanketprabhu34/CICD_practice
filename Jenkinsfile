@@ -28,6 +28,10 @@ pipeline {
                 }
             }
         }
-
-    }
+        stage ('docker image build') {
+            steps{
+            sh 'docker build -t myapp/app:1.0.0'
+                }
+            }      
+        }
 }
